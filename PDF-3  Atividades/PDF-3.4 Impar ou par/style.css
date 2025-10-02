@@ -1,0 +1,41 @@
+/* Fonte geral maior */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 20px;
+    color: purple;
+    font-size: 18px; /* aumenta o tamanho padrão do texto */
+}
+
+/* Campo de entrada maior */
+input {
+    display: block;
+    margin: 15px 0;
+    padding: 12px;         /* aumenta o espaço interno */
+    width: 300px;          /* mais largo */
+    font-size: 18px;       /* fonte maior dentro do input */
+}
+
+/* Botão maior */
+button {
+    padding: 12px 20px;    /* mais espaço interno */
+    font-size: 18px;       /* texto maior */
+    cursor: pointer;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Resultado bem destacado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;       /* fonte maior pro resultado */
+    color: darkgreen;      /* cor para destacar */
+}

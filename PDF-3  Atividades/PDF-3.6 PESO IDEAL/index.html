@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- Declara que o documento usa HTML5 -->
+<html lang="pt-BR"> <!-- Define idioma da página -->
+<head>
+  <meta charset="utf-8" /> <!-- Codificação para acentos -->
+  <title>Peso ideal</title> <!-- Título da aba -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o CSS -->
+</head>
+<body>
+  <div class="card"> <!-- Container principal estilizado -->
+    <h2>Exercício 6 — Calcular peso ideal</h2>
+
+    <!-- Campo para altura -->
+    <label for="altura">Altura (em metros):</label>
+    <input id="altura" type="text" placeholder="Ex: 1,75">
+
+    <!-- Grupo de botões para escolher o sexo -->
+    <label>Sexo:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="sexo" value="M"> Masculino</label>
+      <label><input type="radio" name="sexo" value="F"> Feminino</label>
+    </div>
+
+    <!-- Botão que dispara o cálculo -->
+    <button id="calcBtn">Calcular peso ideal</button>
+
+    <!-- Área onde aparece o resultado ou mensagens de erro -->
+    <div id="output" class="result" aria-live="polite"></div>
+  </div>
+
+  <!-- Importa o código JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

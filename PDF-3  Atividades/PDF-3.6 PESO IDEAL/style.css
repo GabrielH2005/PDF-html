@@ -1,0 +1,57 @@
+/* Estilos básicos do corpo */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif; /* Fonte */
+  background: #f7f7f7; /* Fundo cinza claro */
+  padding: 20px;
+}
+
+/* Estilo do cartão central */
+.card {
+  max-width: 480px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza */
+  background: #fff; /* Fundo branco */
+  padding: 16px;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+h2 { margin-top: 0; } /* Remove margem superior do título */
+
+/* Campos de texto e botões */
+input, button {
+  width: 100%; /* Ocupa toda a largura */
+  box-sizing: border-box; /* Inclui padding na largura */
+  padding: 8px;
+  margin-top: 8px;
+}
+
+/* Grupo dos botões de sexo */
+.radio-group {
+  margin: 8px 0;
+}
+
+.radio-group label {
+  margin-right: 16px;
+}
+
+/* Botão */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #28a745; /* Verde */
+  color: #fff;
+}
+
+/* Área de resultado */
+.result {
+  margin-top: 12px;
+  padding: 10px;
+  background: #eef;
+  border-radius: 6px;
+  min-height: 28px; /* Para não sumir se vazio */
+}

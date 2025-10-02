@@ -1,0 +1,44 @@
+/* Estilos simples e limpos */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;  /* ocupa sempre a altura total da tela */
+  display: flex;      /* opcional: facilita centralizar conteúdo */
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+h2 { margin-top: 0; }
+
+input, button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+}
+
+.result {
+  margin-top: 12px;
+  padding: 10px;
+  background: #eef;
+  border-radius: 6px;
+  min-height: 28px;
+  white-space: pre-wrap;
+}

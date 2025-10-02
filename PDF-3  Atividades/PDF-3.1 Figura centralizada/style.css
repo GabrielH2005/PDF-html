@@ -1,0 +1,19 @@
+/* Corpo da página: centraliza tudo no meio da tela */
+body {
+    display: flex;              /* transforma o body em um container flex */
+    justify-content: center;    /* centraliza horizontalmente */
+    align-items: center;        /* centraliza verticalmente */
+    height: 100vh;              /* ocupa a altura inteira da janela */
+    margin: 0;                  /* remove margens padrão */
+}
+
+/* Div que envolve as imagens */
+.container {
+    text-align: center;         /* centraliza o conteúdo dentro da div */
+}
+
+/* As imagens */
+.container img {
+    width: 200px;               /* define largura fixa só pra exemplo */
+    margin: 10px;               /* espaço entre as imagens */
+}

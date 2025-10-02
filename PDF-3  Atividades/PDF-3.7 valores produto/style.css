@@ -1,0 +1,49 @@
+/* Estilo base do corpo */
+body {
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif; /* Fonte */
+  background: #f7f7f7; /* Fundo cinza claro */
+  padding: 20px;
+}
+
+/* Caixa central */
+.card {
+  max-width: 480px; /* largura máxima */
+  margin: 0 auto;   /* centralizado */
+  background: #fff; /* fundo branco */
+  padding: 16px;
+  border-radius: 8px; /* cantos arredondados */
+}
+
+h2 { margin-top: 0; } /* tira margem superior */
+
+/* Inputs e botões */
+input, button {
+  width: 100%; /* ocupam toda largura */
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+/* Botão */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #007bff; /* azul */
+  color: #fff;
+}
+
+/* Área de saída */
+.result {
+  margin-top: 12px;
+  padding: 10px;
+  background: #eef;
+  border-radius: 6px;
+  min-height: 28px;
+  white-space: pre-wrap; /* permite quebra de linha */
+}

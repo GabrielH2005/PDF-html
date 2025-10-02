@@ -1,0 +1,55 @@
+/* Estilo geral da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
+    font-size: 16px;       /* Tamanho base da fonte */
+    background: #f9f9f9;   /* Fundo cinza claro */
+    margin: 0;             /* Remove margens padrão */
+    padding: 20px;         /* Espaçamento interno */
+}
+
+/* Estilo do cartão */
+.cartao {
+    width: 300px;                        /* largura fixa */
+    padding: 1rem;                       /* espaço interno */
+    margin: 1rem auto;                   /* centraliza o cartão horizontalmente */
+    border-radius: 10px;                 /* cantos arredondados */
+    border: 1px solid #c9c7c7;           /* borda cinza */
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* sombra */
+    background: #fff;                    /* fundo branco */
+}
+
+/* Títulos dentro do cartão */
+.titulo {
+    margin: 0 0 1rem 0; /* espaço abaixo do título */
+}
+
+/* Imagem dentro do cartão */
+.imagem {
+    width: 100%;        /* ocupa toda a largura disponível do cartão */
+    height: auto;       /* altura proporcional (não distorce a imagem) */
+    border-radius: 8px; /* cantos levemente arredondados */
+}
+
+/* Rodapé do cartão (onde ficam link e botão) */
+.rodape {
+    display: flex;                   /* coloca elementos lado a lado */
+    justify-content: space-between;  /* joga um pra esquerda e outro pra direita */
+    margin-top: 10px;                /* espaço acima */
+}
+
+/* Botão */
+button {
+    color: white;             /* texto branco */
+    padding: .3rem 2rem;      /* espaço interno */
+    background-color: blue;   /* fundo azul */
+    border: none;             /* sem borda */
+    border-radius: 4px;       /* cantos arredondados */
+    cursor: pointer;          /* mouse vira mãozinha */
+}
+
+/* Link */
+a {
+    text-decoration: none; /* remove o sublinhado */
+    color: blue;           /* cor azul */
+    font-weight: bold;     /* negrito */
+}

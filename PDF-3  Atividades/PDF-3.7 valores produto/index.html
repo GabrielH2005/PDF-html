@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="pt-BR"> <!-- Define idioma -->
+<head>
+  <meta charset="utf-8" /> <!-- Codificação UTF-8 -->
+  <title>Exercício 7 — Condição de Pagamento</title> <!-- Título da aba -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa CSS -->
+</head>
+<body>
+  <div class="card"> <!-- Container visual -->
+    <h2>Exercício 7 — Cálculo de pagamento</h2>
+
+    <!-- Campo do preço -->
+    <label for="preco">Preço do produto (R$):</label>
+    <input id="preco" type="text" placeholder="Ex: 100,00">
+
+    <!-- Campo do código -->
+    <label for="codigo">Código da condição de pagamento (1 a 4):</label>
+    <input id="codigo" type="text" placeholder="Ex: 1">
+
+    <!-- Botão -->
+    <button id="calcBtn">Calcular valor</button>
+
+    <!-- Resultado -->
+    <div id="output" class="result" aria-live="polite"></div>
+  </div>
+
+  <!-- Importa JS -->
+  <script src="script.js"></script>
+</body>
+</html>

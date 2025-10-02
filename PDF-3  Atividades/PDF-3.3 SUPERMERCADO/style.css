@@ -1,0 +1,57 @@
+/* Fonte padrão e espaçamento da página */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5; /* cinza claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container dos produtos */
+.produtos {
+    display: flex;           /* coloca os cartões lado a lado */
+    flex-wrap: wrap;         /* quebra linha quando faltar espaço */
+    justify-content: center; /* centraliza os cartões */
+    gap: 20px;               /* espaço entre os cartões */
+}
+
+/* Estilo do cartão */
+.cartao {
+    width: 220px;                          /* largura fixa */
+    padding: 1rem;                         /* espaçamento interno */
+    border-radius: 8px;                    /* cantos arredondados */
+    background: white;                     /* fundo branco */
+    border: 1px solid #ccc;                /* borda cinza clara */
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* sombra */
+    text-align: center;                    /* centraliza conteúdo dentro */
+}
+
+/* Imagem do produto (agora padronizada) */
+.imagem {
+    width: 100%;           /* ocupa a largura do cartão */
+    height: 150px;         /* altura fixa */
+    object-fit: cover;     /* corta excesso sem distorcer */
+    border-radius: 6px;    /* cantos arredondados */
+    margin-bottom: 10px;
+}
+
+/* Preço em destaque */
+.preco {
+    font-weight: bold;
+    color: green;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Link "detalhes" */
+a {
+    display: inline-block;     /* link em formato de botão */
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+a:hover {
+    background: darkblue;
+}
