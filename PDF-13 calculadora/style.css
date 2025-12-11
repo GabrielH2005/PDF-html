@@ -1,64 +1,69 @@
 body {
-    display: flex;
-     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1c1b1b;
-    font-family: Arial, sans-serif;
+    display: flex; /* Usa flexbox para centralizar o conteúdo vertical/horizontalmente */
+    flex-direction: column; /* Empilha elementos no eixo vertical */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Altura da tela inteira para centralização completa */
+    background-color: #1c1b1b; /* Fundo escuro da página */
+    font-family: Arial, sans-serif; /* Fonte legível e padrão */
 }
 
 h1{
-    color: white;
+    color: white; 
 }
 
+/* Caixa principal da calculadora */
 .calculator {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+    padding: 20px; /* Espaçamento interno */
+    width: 300px; /* Largura fixa do painel */
 }
+
 
 #display {
-    width: 100%;
-    height: 50px;
-    font-size: 24px;
-    text-align: right;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 10px;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
+    width: 100%; /* Ocupa toda a largura disponível dentro do container */
+    height: 50px; /* Altura do display */
+    font-size: 24px; /* Tamanho do texto no display */
+    text-align: right; /* Alinha números à direita (padrão de calculadora) */
+    border: none; /* Remove borda padrão do input */
+    border-radius: 5px; /* Arredonda cantos do display */
+    padding: 5px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaço entre display e botões */
+    background-color: #f0f0f0; /* Cor de fundo leve para o display */
+    box-sizing: border-box; /* Inclui padding na largura total */
 }
 
+/* Grid para os botões */
 .box-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    display: grid; /* Usa grid para organizar botões em grade */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Quatro colunas iguais */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* Cinco linhas iguais */
+    gap: 10px; /* Espaçamento entre os botões */
 }
 
 button {
-    height: 60px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    height: 60px; /* Altura de cada botão */
+    font-size: 20px; /* Tamanho da fonte nos botões */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s; /* Transição suave no hover */
 }
 
 button:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; 
 }
 
+/* Botão zero ocupa duas colunas na grade */
 .btn-zero{
-    grid-column: 1 / 3;
+    grid-column: 1 / 3; /* Inicia na coluna 1 e termina antes da coluna 3 */
 }
 
+/* Botão de resultado ocupa duas linhas e fica na última coluna */
 .btn-result{
-    grid-row: 4 / 6;
-    grid-column: 4;
-    height: 100%;
+    grid-row: 4 / 6; /* Ocupa da linha 4 até a 5 */
+    grid-column: 4; /* Fica na coluna 4 */
+    height: 100%; /* Ocupa toda a altura disponível nas linhas que abrange */
 }
